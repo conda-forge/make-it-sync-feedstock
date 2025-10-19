@@ -1,5 +1,5 @@
 {% set name = "make-it-sync" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.1" %}
 {% set python_min = "3.7" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/make_it_sync-{{ version }}.tar.gz
-  sha256: 2b19630e6e6ad7d87aa32a6120113cb61b88872afc88838b98d1d0dc3eebf8b5
+  sha256: 47fe27b34537f9e3b09a869b6e0e7c723026cfc3e12087d8e248bf55506ced28
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
